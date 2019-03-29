@@ -1,4 +1,7 @@
 # CGI-Python 学习
+(配置失败，没有实现功能。没有找到以下配置的位置
+`AddHandler cgi-script .cgi .pl .py`  
+)
 
 ## 安装Apache服务器
 
