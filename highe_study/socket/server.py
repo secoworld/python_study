@@ -20,11 +20,14 @@ port = 9999
 #绑定端口
 s.bind((host, port))
 
+#设置最大连接数，超出后排队
+s.listen(5)
+
 while True:
     #建立客户端连接
-    clientsockt, addr = serversocket.accpet()
+    clientsockt, addr =  s.accept() 
 
-    print("连接地址为： %s", %str(addr))
+    print("连接的地址为：%s" %str(addr))
 
     msg= "欢迎光临本站 ！" + "\r\n"
     clientsockt.send(msg.encode('utf-8'))
