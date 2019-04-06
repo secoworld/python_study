@@ -12,6 +12,13 @@
 PythonWeb服务器网关接口（Python Web Server Gateway Interface，缩写为WSGI)是Python应用程序或框架和Web服务器之间的一种接口
 
 # 二、 项目实例
+
+在vscode中使用Django可能会遇到些麻烦，经常会出现一些莫名的错误。解决方法：
+安装pylint_django插件
+```pip isntall pylint-django 
+```
+然后在vscode中选择"文件"->"首选项"->"设置"打开vscode的设置文件，然后"python.linting.pylintArgs"处添加"--load-plugins", "pylint_django"即可
+
 ## 1. 安装Django
 ```
 pip3 install django
@@ -210,4 +217,6 @@ python manage.py migrate
 ``` python
 
 ```
+
+
 
